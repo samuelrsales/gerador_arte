@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Template Arte </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="m-0 bg-white">
+
+    <div class="flex flex-col justify-center items-center h-screen p-5 box-border">
+
+        <div class="w-full px-8 max-w-screen-lg h-full max-h-screen-lg bg-white rounded-[30px] border border-gray-400 text-left flex flex-col">
+
+            <div class="flex-1 flex flex-col py-10 items-center">
+                
+                <img src="${imagePath}" alt="${title}" class="w-3/4 h-auto max-h-[500px] mt-10 object-cover">
+
+                <h1 class="text-6xl capitalize font-semibold mt-32 m-5 leading-tight text-black text-center">
+                    ${title}
+                </h1>
+                
+                <p class="text-[45px] text-gray-600 text-pretty leading-snug mt-10 mx-5 text-center">
+                    ${description}
+                </p>
+                
+                <button class="bg-[#00a890] text-white font-semibold rounded-xl border-none py-7 w-full rounded text-5xl mt-auto">
+                    ${price}
+                </button>
+            </div>
+        </div>
+
+        <img src="./novazul.svg" class="w-80 my-10" alt="">
+
+    </div>
+</body>
+</html>
